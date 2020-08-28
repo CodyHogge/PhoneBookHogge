@@ -137,7 +137,7 @@ public class Main {
 			
 			
 			
-		case 5: //Search by full name							**GETTING AN ERROR ON THIS** 
+		case 5: //Search by full name	
 			System.out.print("Please enter the name to search: "); //copied from case 3 and replaced variables/ getter's
 			Scanner fullnamesc = new Scanner(System.in);				
 			String fullname = fullnamesc.nextLine().trim().toLowerCase();	
@@ -392,7 +392,7 @@ public class Main {
 			break;
 			
 			
-		case 10: //Show all records in ascending order
+		case 10: //Show all records in ascending order by first name
 			
 				sortedArray = sortFName(entryArray, z);
 				for(int i=0;i<z;i++) {
@@ -412,12 +412,6 @@ public class Main {
 			System.out.println("You selected option: " + selection + ".");
 			System.out.println("Thank you for using the phone book.");
 			break;
-			
-		
-		case 12: //display all entries
-			for(int i=0;i<z;i++) {
-				displayEntry(i, entryArray);
-			}
 			
 			
 		default: //if the user enters a value that is outside of the menu options
@@ -486,7 +480,6 @@ public class Main {
 		System.out.println();
 	}
 	
-	//sorting methods below
 	//sortFName
 	public static Entry[] sortFName(Entry[] entry, int z) {
 		Entry temp;
