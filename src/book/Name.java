@@ -6,10 +6,15 @@ public class Name extends Entry{
 	private String lastName;
 	private String middleName;
 	private String fullName;
+	private String full2Name;
 	
 	//default constructor
 	public Name() {}
 	
+	public Name(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	//Parameterized constructor
 	public Name(String firstName, String middleName, String lastName) {
 		this.firstName = firstName;
@@ -30,6 +35,9 @@ public class Name extends Entry{
 	public String getLastName() {
 		return this.lastName;
 	}
+	public String getFull2Name() {
+		return this.full2Name;
+	}
 	
 	//Setter's
 	public void setFullName(String firstName, String middleName, String lastName) {
@@ -44,11 +52,13 @@ public class Name extends Entry{
 	public void setlastName(String lastName) {
 		this.lastName = lastName;
 	}
+	public void setFull2Name(String firstName, String lastName) {
+		this.full2Name = firstName + " " + this.lastName;
+	}
 	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public String toString() {
+		return firstName + " " + middleName + " " + lastName;
 	}
 
 }

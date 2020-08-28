@@ -40,10 +40,8 @@ public class Entry {
 	public void setPhoneNumber(Phone phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public String toString() {
+		return name+", "+address+", "+phoneNumber;
 	}
 
 }

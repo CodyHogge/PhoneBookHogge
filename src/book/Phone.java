@@ -19,6 +19,7 @@ public class Phone{
 		this.area = area;
 		this.location = location;
 		this.num = num;
+		this.number = area+location+num;
 	}
 	
 	//param constructor for further practice "adding work/cell/home"
@@ -61,11 +62,7 @@ public class Phone{
 		this.num = num;
 	}
 	
-	
-
-
-public static void main(String[] args) {
-	// TODO Auto-generated method stub
-
-}
+	public String phonetoString() {
+		return area+location+num;
+	}
 }
